@@ -13,6 +13,22 @@ But do you understand what it did?
 
 This is the question most developers skip in 2026, and it's the most important one. As AI coding assistants become the default way we write software, the developers who thrive won't be the ones who prompt the fastest — they'll be the ones who question the deepest. The Socratic method, a 2,400-year-old framework for arriving at truth through disciplined questioning, turns out to be the most relevant skill in modern software engineering.
 
+And if you've ever watched *House M.D.*, you've already seen it in action.
+
+## It's not lupus — and your first answer is probably wrong
+
+If there's a modern character who embodies the Socratic method, it's Gregory House. Every episode follows the same pattern: a patient presents symptoms, the team jumps to a diagnosis, and House tears it apart. "It's not lupus." "What if it's not an infection but an autoimmune response?" "You're treating the symptom, not the cause." He's relentless, abrasive, and almost always right — not because he's smarter than everyone, but because he refuses to accept the first answer.
+
+House runs differential diagnosis like a Socratic seminar. He writes possibilities on a whiteboard, challenges every assumption, and eliminates hypotheses one by one. His team proposes, he disposes, and what survives the interrogation is usually the truth.
+
+Now replace "patient" with "codebase" and "diagnosis" with "solution." The parallel is exact.
+
+When AI generates code, it's giving you its first diagnosis. It looked at the symptoms (your prompt), ran it through its training (medical school, in the analogy), and proposed a treatment. The question is: are you the doctor who accepts the first diagnosis and starts treatment? Or are you House — the one who grabs a marker, walks to the whiteboard, and asks "what else could this be?"
+
+The developers I trust most operate like House. They're not satisfied with "it works." They want to know *why* it works, *when* it will stop working, and *what else* could explain the behavior they're seeing. In an AI-first world, this instinct is the difference between shipping reliable software and shipping confident-looking time bombs.
+
+"Everybody lies," House says. Well, everybody hallucinates too — including large language models. Trust, but verify. Then verify again.
+
 ## What Socrates knew that we forgot
 
 Socrates didn't write code. He didn't even write books. What he did was ask questions — not to be annoying, but because he believed that real knowledge only emerges when you examine your assumptions. His method was simple: take a claim, probe it with questions, expose contradictions, and arrive at something closer to truth.
@@ -91,7 +107,7 @@ This forces the AI into an analytical mode rather than a generative mode, and it
 **Step 2: Challenge the first response.**
 Whatever the AI proposes, push back. "What are the failure modes? What happens under load? What's the operational cost of this approach?"
 
-This isn't adversarial — it's the same thing you'd do in a design review with a colleague. The AI can handle the pushback and often produces better output on the second pass.
+This isn't adversarial — it's differential diagnosis. House never accepts what his team proposes in the first five minutes. He challenges, they defend, and the solution that survives is stronger for it. The AI can handle the pushback and often produces better output on the second pass.
 
 **Step 3: Ask for alternatives.**
 "What would you do differently if consistency mattered more than latency? What if we couldn't add a new dependency? What if this had to work offline?"
@@ -147,4 +163,6 @@ The developers who resist that temptation — who maintain the discipline of que
 
 Not because they rejected AI, but because they brought something to the partnership that AI can't provide: the relentless, uncomfortable, deeply human habit of asking *why*.
 
-Socrates would have been a great code reviewer.
+Socrates would have been a great code reviewer. And House? House would look at your AI-generated pull request, pop a Vicodin, and say: "The code is lying. It's always lying. Run the tests again — the *real* tests this time."
+
+Be more House. Question everything.
