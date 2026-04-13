@@ -1,7 +1,7 @@
 ---
 title: "The Socratic Method in an AI-First Development World"
 tags: "programming, ai, softwaredevelopment, career"
-canonical_url: ""
+canonical_url: "https://blog.orlandoburli.com.br/the-socratic-method-in-an-ai-first-development-world-5aa2f3fc7db7"
 cover_image: ""
 published: false
 series: ""
