@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360">
+  <defs>
+    <filter id="ds" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity=".07"/>
+    </filter>
+  </defs>
+  <rect width="900" height="360" rx="16" fill="#f8fafc"/>
+  <text x="450" y="36" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b" font-family="sans-serif">DEPLOYMENT MODES</text>
+  <rect x="30" y="56" width="410" height="280" rx="14" fill="#fff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#ds)"/>
+  <rect x="30" y="56" width="410" height="44" rx="14" fill="#2563eb"/>
+  <rect x="30" y="86" width="410" height="14" fill="#2563eb"/>
+  <text x="235" y="84" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff" font-family="sans-serif">SaaS Mode (Multi-tenant)</text>
+  <rect x="54" y="112" width="100" height="40" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="104" y="136" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb" font-family="sans-serif">Tenant A</text>
+  <rect x="168" y="112" width="100" height="40" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="218" y="136" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb" font-family="sans-serif">Tenant B</text>
+  <rect x="282" y="112" width="100" height="40" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="332" y="136" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb" font-family="sans-serif">Tenant C</text>
+  <line x1="104" y1="152" x2="180" y2="185" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="218" y1="152" x2="218" y2="185" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="332" y1="152" x2="256" y2="185" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="235" y="176" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="sans-serif">subdomain / header / JWT / API key</text>
+  <rect x="110" y="188" width="216" height="44" rx="10" fill="#1e293b" filter="url(#ds)"/>
+  <text x="218" y="215" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff" font-family="sans-serif">bacon-core (shared)</text>
+  <rect x="62" y="256" width="130" height="36" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
+  <text x="127" y="279" text-anchor="middle" font-size="10" font-weight="bold" fill="#059669" font-family="sans-serif">PostgreSQL</text>
+  <rect x="216" y="256" width="130" height="36" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="281" y="279" text-anchor="middle" font-size="10" font-weight="bold" fill="#7c3aed" font-family="sans-serif">Kafka</text>
+  <line x1="195" y1="232" x2="127" y2="256" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="245" y1="232" x2="281" y2="256" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="235" y="316" text-anchor="middle" font-size="10" fill="#94a3b8" font-family="sans-serif">One deployment / Many tenants / Full isolation</text>
+  <rect x="460" y="56" width="410" height="280" rx="14" fill="#fff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#ds)"/>
+  <rect x="460" y="56" width="410" height="44" rx="14" fill="#ea580c"/>
+  <rect x="460" y="86" width="410" height="14" fill="#ea580c"/>
+  <text x="665" y="84" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff" font-family="sans-serif">Sidecar Mode (Single-app)</text>
+  <rect x="570" y="112" width="190" height="40" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1"/>
+  <text x="665" y="136" text-anchor="middle" font-size="11" font-weight="bold" fill="#ea580c" font-family="sans-serif">Your Application</text>
+  <line x1="665" y1="152" x2="665" y2="185" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="665" y="176" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="sans-serif">localhost / implicit tenant</text>
+  <rect x="557" y="188" width="216" height="44" rx="10" fill="#1e293b" filter="url(#ds)"/>
+  <text x="665" y="215" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff" font-family="sans-serif">bacon-core (dedicated)</text>
+  <rect x="582" y="256" width="166" height="36" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="665" y="279" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569" font-family="sans-serif">Config file (YAML)</text>
+  <line x1="665" y1="232" x2="665" y2="256" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="665" y="316" text-anchor="middle" font-size="10" fill="#94a3b8" font-family="sans-serif">One instance / One app / Minimal overhead</text>
+</svg>

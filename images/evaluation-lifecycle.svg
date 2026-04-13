@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <defs>
+    <filter id="sh" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity=".06"/>
+    </filter>
+  </defs>
+  <rect width="900" height="520" rx="16" fill="#f8fafc"/>
+  <text x="450" y="36" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b" font-family="sans-serif">EVALUATION LIFECYCLE</text>
+  <rect x="80" y="56" width="120" height="40" rx="10" fill="#2563eb" filter="url(#sh)"/>
+  <text x="140" y="81" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff" font-family="sans-serif">Client App</text>
+  <line x1="140" y1="96" x2="140" y2="480" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,4" opacity=".3"/>
+  <rect x="290" y="56" width="120" height="40" rx="10" fill="#1e293b" filter="url(#sh)"/>
+  <text x="350" y="81" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff" font-family="sans-serif">API :8080</text>
+  <line x1="350" y1="96" x2="350" y2="480" stroke="#1e293b" stroke-width="2" stroke-dasharray="4,4" opacity=".2"/>
+  <rect x="500" y="56" width="120" height="40" rx="10" fill="#1e293b" filter="url(#sh)"/>
+  <text x="560" y="81" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff" font-family="sans-serif">Engine</text>
+  <line x1="560" y1="96" x2="560" y2="480" stroke="#1e293b" stroke-width="2" stroke-dasharray="4,4" opacity=".2"/>
+  <rect x="710" y="56" width="120" height="40" rx="10" fill="#059669" filter="url(#sh)"/>
+  <text x="770" y="81" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff" font-family="sans-serif">Persistence</text>
+  <line x1="770" y1="96" x2="770" y2="480" stroke="#059669" stroke-width="2" stroke-dasharray="4,4" opacity=".2"/>
+  <line x1="144" y1="125" x2="340" y2="125" stroke="#475569" stroke-width="2"/>
+  <polygon points="338,120 348,125 338,130" fill="#475569"/>
+  <rect x="180" y="109" width="120" height="24" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="240" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569" font-family="sans-serif">POST /evaluate</text>
+  <line x1="354" y1="160" x2="550" y2="160" stroke="#475569" stroke-width="2"/>
+  <polygon points="548,155 558,160 548,165" fill="#475569"/>
+  <text x="455" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569" font-family="sans-serif">Evaluate(flag, ctx)</text>
+  <polygon points="560,195 635,220 560,245 485,220" fill="#fff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="560" y="224" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e293b" font-family="sans-serif">Persistent?</text>
+  <line x1="485" y1="220" x2="410" y2="220" stroke="#2563eb" stroke-width="2"/>
+  <text x="448" y="214" text-anchor="middle" font-size="9" font-weight="bold" fill="#2563eb" font-family="sans-serif">NO</text>
+  <rect x="340" y="208" width="70" height="28" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="375" y="226" text-anchor="middle" font-size="9" font-weight="bold" fill="#2563eb" font-family="sans-serif">Compute</text>
+  <line x1="635" y1="220" x2="760" y2="220" stroke="#059669" stroke-width="2"/>
+  <polygon points="758,215 768,220 758,225" fill="#059669"/>
+  <text x="700" y="214" text-anchor="middle" font-size="9" font-weight="bold" fill="#059669" font-family="sans-serif">YES</text>
+  <rect x="700" y="234" width="140" height="24" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
+  <text x="770" y="250" text-anchor="middle" font-size="10" font-weight="bold" fill="#059669" font-family="sans-serif">GetAssignment()</text>
+  <line x1="760" y1="275" x2="570" y2="275" stroke="#059669" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="572,270 562,275 572,280" fill="#059669"/>
+  <text x="665" y="270" text-anchor="middle" font-size="9" fill="#059669" font-family="sans-serif">Assignment or empty</text>
+  <polygon points="560,295 625,315 560,335 495,315" fill="#fff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="560" y="312" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e293b" font-family="sans-serif">Found and</text>
+  <text x="560" y="324" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e293b" font-family="sans-serif">valid?</text>
+  <line x1="495" y1="315" x2="360" y2="315" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="362,310 352,315 362,320" fill="#2563eb"/>
+  <text x="428" y="308" text-anchor="middle" font-size="9" font-weight="bold" fill="#2563eb" font-family="sans-serif">YES: cached result</text>
+  <line x1="625" y1="315" x2="680" y2="315" stroke="#475569" stroke-width="2"/>
+  <text x="653" y="308" text-anchor="middle" font-size="9" font-weight="bold" fill="#475569" font-family="sans-serif">NO</text>
+  <rect x="680" y="340" width="130" height="36" rx="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" filter="url(#sh)"/>
+  <text x="745" y="355" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e293b" font-family="sans-serif">Compute result</text>
+  <text x="745" y="369" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="sans-serif">(hash / random)</text>
+  <line x1="680" y1="315" x2="680" y2="340" stroke="#475569" stroke-width="1.5"/>
+  <line x1="745" y1="376" x2="745" y2="396" stroke="#059669" stroke-width="2"/>
+  <rect x="680" y="396" width="130" height="24" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
+  <text x="745" y="412" text-anchor="middle" font-size="10" font-weight="bold" fill="#059669" font-family="sans-serif">SaveAssignment()</text>
+  <line x1="342" y1="450" x2="150" y2="450" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="152,445 142,450 152,455" fill="#2563eb"/>
+  <rect x="170" y="436" width="150" height="28" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1" filter="url(#sh)"/>
+  <text x="245" y="454" text-anchor="middle" font-size="10" font-weight="bold" fill="#2563eb" font-family="sans-serif">{enabled, variant, reason}</text>
+  <rect x="60" y="480" width="780" height="30" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="90" y1="495" x2="115" y2="495" stroke="#475569" stroke-width="2"/>
+  <text x="123" y="499" font-size="10" fill="#475569" font-family="sans-serif">Request</text>
+  <line x1="200" y1="495" x2="225" y2="495" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="233" y="499" font-size="10" fill="#2563eb" font-family="sans-serif">Response</text>
+  <line x1="310" y1="495" x2="335" y2="495" stroke="#059669" stroke-width="2"/>
+  <text x="343" y="499" font-size="10" fill="#059669" font-family="sans-serif">Persistence</text>
+  <polygon points="460,489 476,495 460,501" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="484" y="499" font-size="10" fill="#475569" font-family="sans-serif">Decision</text>
+</svg>
